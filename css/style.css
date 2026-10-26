@@ -1,0 +1,58 @@
+/* Spotless Care — base, header, footer. Colors/values ported from the original WordPress global styles. */
+:root{--navy:#0d2e5c;--navy-d:#0a2447;--navy-m:#14406f;--blue:#1b8fd4;--sky:#8ec6e8;--teal:#2fa8a0;--gold:#d9a93b;--ink:#3a4a5c;--mute:#5a6b80;--pale:#f1f5f9;--serif:Georgia,'Times New Roman',serif;--sans:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--navy);color:#fff;font-family:var(--sans);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:#8fd0f0}a:hover{color:#fff}
+h1,h2,h3{margin:0 0 .6em;color:#fff}
+p{margin:0 0 1.1em}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:#fff;color:var(--navy);padding:.5rem 1rem;z-index:999}
+
+/* layout */
+.sec{padding:clamp(2.5rem,8vw,4rem) 1.25rem}
+.in{max-width:760px;margin:0 auto}.wide{max-width:1180px;margin:0 auto}
+.bg-navy{background:var(--navy)}.bg-dark{background:var(--navy-d)}.bg-blue{background:var(--blue)}.bg-pale{background:var(--pale)}.bg-white{background:#fff;color:var(--ink)}
+.bg-white h2,.bg-white h3{color:var(--navy)}.bg-white a{color:var(--blue)}.bg-pale h2{color:var(--navy)}
+
+/* header */
+.sc-header{position:sticky;top:0;z-index:100;background:var(--navy-d);box-shadow:0 1px 10px rgba(0,0,0,.25);padding:0 1.25rem}
+.sc-header-bar{max-width:1180px;margin:0 auto;padding:.55rem 0;display:flex;align-items:center;justify-content:space-between;gap:.5rem;flex-wrap:nowrap}
+.sc-brand{display:flex;align-items:center;gap:.7rem;min-width:0}
+.sc-logo{flex:0 0 auto;line-height:0}.sc-logo img{height:42px;width:auto}
+.sc-tagline{margin:0;padding-left:.55rem;border-left:1px solid rgba(255,255,255,.22);font-size:9px;line-height:1.3;letter-spacing:.06em;text-transform:uppercase;color:var(--sky);font-weight:600}
+.sc-nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1.5rem}
+.sc-nav a{color:#fff;text-decoration:none;font-size:15px}.sc-nav a:hover,.sc-nav a[aria-current=page]{color:var(--gold)}
+.sc-burger{display:none;background:none;border:0;color:#fff;padding:.4rem;cursor:pointer}
+.sc-burger svg{width:28px;height:28px;fill:#fff}
+.sc-back{margin:0;background:var(--navy-d);border-bottom:1px solid rgba(255,255,255,.1);padding:.55rem 1.25rem;font-size:13px;font-weight:600;line-height:1.4}
+.sc-back a{color:var(--sky);text-decoration:none}.sc-back a::before{content:"\2190";margin-right:.4rem}.sc-back a:hover{color:#fff}
+body.home .sc-back{display:none}
+.sc-marquee{overflow:hidden;background:var(--navy);padding:.55rem 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.sc-marquee-track{display:flex;gap:.6rem;width:max-content;animation:scScroll 34s linear infinite}
+.sc-marquee-track img{height:74px;width:112px;object-fit:cover;border-radius:8px;opacity:.92}
+@keyframes scScroll{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.sc-marquee-track{animation:none}html{scroll-behavior:auto}}
+
+/* floating buttons */
+.sc-wa,.sc-quote{position:fixed;bottom:16px;z-index:300;width:56px;line-height:0;text-align:center}
+.sc-wa{right:16px}.sc-quote{left:16px}
+.sc-wa a,.sc-quote a{display:block}
+.sc-wa img,.sc-quote img{width:56px;height:56px;border-radius:50%;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+.sc-quote::after,.sc-wa::after{display:block;width:max-content;margin-left:50%;transform:translateX(-50%);white-space:nowrap;margin-top:5px;font-size:10px;font-weight:700;letter-spacing:.03em;line-height:1.2;border-radius:999px;padding:3px 7px}
+.sc-quote::after{content:"Get Quote";color:var(--navy-d);background:var(--gold)}
+.sc-wa::after{content:"WhatsApp";color:#fff;background:#25d366}
+
+/* footer */
+.sc-footer{background:var(--navy-d);padding:2.5rem 1.25rem 1.5rem}
+.sc-foot-cols{max-width:1180px;margin:0 auto;display:grid;gap:2rem;grid-template-columns:1fr}
+.sc-footer p,.sc-footer h3{text-align:left;margin:0 0 .6rem}
+.sc-footer a{color:#dbeaf5;text-decoration:none}.sc-footer a:hover{text-decoration:underline}
+.sc-foot-brand{font-family:var(--serif);font-size:1.05rem;line-height:1.3}
+.sc-foot-tag{color:var(--gold);font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+.sc-foot-body{color:#9fb8d0;font-size:13px;line-height:1.6}
+.sc-foot-reg{color:#dbeaf5;font-size:12px;font-weight:600;letter-spacing:.06em;margin-top:1rem!important}
+.sc-foot-h{color:var(--gold);font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.sc-foot-list{color:#dbeaf5;font-size:14px;line-height:1.9}
+.sc-foot-legal{max-width:1180px;margin:2rem auto 0!important;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,.12);color:#6f8fb0;font-size:12px}
