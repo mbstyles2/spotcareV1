@@ -10,6 +10,38 @@
 <link rel="stylesheet" href="../css/style.css">
 <link rel="stylesheet" href="../css/components.css">
 <link rel="stylesheet" href="../css/responsive.css">
+<style>
+/* Upholstery gallery: four images in a balanced 2 x 2 grid */
+.uph-img {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.uph-img img {
+    display: block;
+    width: 100%;
+    height: 260px;
+    margin: 0;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+/* Keep the gallery comfortable on smaller screens too */
+@media (max-width: 600px) {
+    .uph-img {
+        gap: 10px;
+        margin: 20px auto;
+    }
+
+    .uph-img img {
+        height: 160px;
+    }
+}
+</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -24,7 +56,17 @@
 <a class="sc-quote" href="contact.html" title="Request a quotation"><img src="../assets/icons/quote-float.png" alt="Request a quotation"></a>
 <main id="main">
 <section class="sec hero"><div class="in"><h1>Upholstery Cleaning</h1><p>Fabric furniture holds more than it shows. We clean what everyday cleaning cannot reach.</p></div></section>
-<section class="sec bg-white"><div class="in prose"><p class="intro">Upholstery cleaning involves the professional cleaning of fabric-covered furniture, including sofas, chairs, mattresses and other upholstered items. The process helps remove embedded dirt, dust, stains, unpleasant odours and accumulated contaminants that regular household cleaning may not effectively eliminate.</p><h2>Frequently Asked Questions</h2><p><strong>1. What types of furniture do you clean?</strong><br>We clean a variety of upholstered furniture, including:</p><ul><li>Sofas and couches</li><li>Dining chairs</li><li>Office chairs</li><li>Mattresses</li><li>Fabric-covered headboards</li><li>Rugs</li></ul><p><strong>2. How often should I have my upholstery professionally cleaned?</strong><br>We recommend professional upholstery cleaning every 6–12 months, depending on usage, household activity, pets and general exposure to dirt. Homes with children, pets or frequent furniture use may require more frequent cleaning.</p><p><strong>3. How much does upholstery cleaning cost?</strong><br>Our pricing depends on the type, size and number of furniture pieces, as well as their condition.</p><div class="btns"><a class="btn btn-navy" href="contact.html?service=Upholstery%2C%20Carpet%20%26%20Mattress%20Care">Request an upholstery quote</a></div></div></section>
+<section class="sec bg-white"><div class="in prose">
+
+<div class="uph-img">
+<img src="../assets/images/uph/carpet.jpg" alt="Spotless Care crew at work on a client site in Abuja" loading="lazy" width="300">
+<img src="../assets/images/uph/carpet2.jpg" alt="Spotless Care crew at work on a client site in Abuja" loading="lazy" width="300">
+<img src="../assets/images/uph/ch.jpg" alt="Spotless Care crew at work on a client site in Abuja" loading="lazy">
+<img src="../assets/images/uph/cha.jpg" alt="Spotless Care crew at work on a client site in Abuja" loading="lazy">
+</div>
+
+
+<p class="intro">Upholstery cleaning involves the professional cleaning of fabric-covered furniture, including sofas, chairs, mattresses and other upholstered items. The process helps remove embedded dirt, dust, stains, unpleasant odours and accumulated contaminants that regular household cleaning may not effectively eliminate.</p><h2>Frequently Asked Questions</h2><p><strong>1. What types of furniture do you clean?</strong><br>We clean a variety of upholstered furniture, including:</p><ul><li>Sofas and couches</li><li>Dining chairs</li><li>Office chairs</li><li>Mattresses</li><li>Fabric-covered headboards</li><li>Rugs</li></ul><p><strong>2. How often should I have my upholstery professionally cleaned?</strong><br>We recommend professional upholstery cleaning every 6–12 months, depending on usage, household activity, pets and general exposure to dirt. Homes with children, pets or frequent furniture use may require more frequent cleaning.</p><p><strong>3. How much does upholstery cleaning cost?</strong><br>Our pricing depends on the type, size and number of furniture pieces, as well as their condition.</p><div class="btns"><a class="btn btn-navy" href="contact.html?service=Upholstery%2C%20Carpet%20%26%20Mattress%20Care">Request an upholstery quote</a></div></div></section>
 </main>
 <footer class="sc-footer"><div class="sc-foot-cols">
 <div><p class="sc-foot-brand">Spotless Care Cleaning Services</p><p class="sc-foot-tag">Elevating Cleanliness, Enhancing Value</p><p class="sc-foot-body">Trained crews, documented procedures and a supervisor who signs off before we leave.</p><p class="sc-foot-reg">Registered with the Corporate Affairs Commission<br>RC 8805399</p></div>
